@@ -2,6 +2,8 @@
 
 A simple roommate food tracking app that helps manage shared food items and prevents conflicts.
 
+
+Updated FridgePolice implementation
 ---
 
 ## 🚀 Features
