@@ -1,0 +1,16 @@
+﻿## CI Test Update
+This change is made to verify GitHub Actions CI pipeline.
+--- TEST 1: LOGIN AS REGULAR USER ---
+Γ£à Logged in as: user (Role: user)
+
+--- TEST 2: REGULAR USER TRIES TO ACCESS ADMIN ROUTE (Should Fail with 403) ---
+Γ£à Success: Access denied correctly (Status 403). Message: "User role 'user' is not authorized to access this resource."
+
+--- TEST 3: LOGIN AS ADMIN USER ---
+Γ£à Logged in as: admin (Role: admin)
+
+--- TEST 4: ADMIN USER ACCESSES ADMIN ROUTE (Should Succeed) ---
+Γ£à Success: Admin accessed analytics. Data count: 2
+
+--- TEST 5: NO AUTHENTICATION (Should Fail with 401) ---
+Γ£à Success: Access denied for no-auth (Status 401). Message: "You are not logged in. Please login first."
